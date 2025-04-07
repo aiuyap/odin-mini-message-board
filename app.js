@@ -1,5 +1,8 @@
 const express = require('express');
+const indexRouter = require('./routes/indexRoute');
 const app = express();
+
+app.use('/', indexRouter);
 
 const PORT = 3000;
 app.listen(PORT, () => {
