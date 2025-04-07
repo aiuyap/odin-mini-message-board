@@ -6,6 +6,9 @@
     <title>Mini Message Board</title>
   </head>
   <body>
+    <h1><%- title %></h1>
+    <a href="/new">Add New Message Here!</a>
+    <h2>List of messages:</h2>
     <ul>
       <% messages.map((message) => { %> <%- include('message', { message:
       message}) %> <% }) %>
